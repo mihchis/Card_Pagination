@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cards Pagination</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <section class="profiles">
+            <h2>Top Properties</h2>
+            <div class="cards-wrapper">
+                <div class="cards" aria-live="polite" aria-atomic="true"></div>
+            </div>
+            <nav class="pagination navigation" role="navigation" aria-label="Pagination Navigation">
+                <a href="#" id="go-to-previous-page" class="pagination button" aria-label="Go To Previous Page">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                        <path d="M15 18l-6-6 6-6"></path>
+                    </svg>
+                    Previous
+                </a>
+                <ul id="pages"></ul>
+                <a href="#" id="go-to-next-page" class="pagination button" aria-label="Go To Next Page">
+                    Next
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="16" height="16">
+                        <path d="M9 18l6-6-6-6"></path>
+                    </svg>
+                </a>
+            </nav>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
